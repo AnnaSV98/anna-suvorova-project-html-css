@@ -14,6 +14,77 @@
         display: none;
     }
 
+    /* titles */
+
+    .first-title {
+        font-size: 23px;
+        line-height: 132.83%;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+
+    /* features */
+
+    .features {
+        grid-gap: 27px;
+    }
+
+    .features__title {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .features__text {
+        font-size: 11px;
+        line-height: 135.84%;
+    }
+
+    /* video */
+
+    .video__img {
+        width: 340px;
+    }
+
+    .video::before {
+        bottom: 8.5px;
+    }
+
+    .video__icon {
+        width: 37px;
+    }
+
+    /* row */
+
+    .row__item {
+        line-height: 169.8%;
+    }
+
+    .row__subtitle {
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+
+    /* options */
+
+    .options__text {
+        font-size: 15px;
+        line-height: 138.6%;
+        padding: 11px 0;
+    }
+
+    /* socials */ 
+
+    .socials__link {
+        margin: 0 10px;
+    }
+
+    .socials__icon {
+        width: 39px;
+    }
+
     /* header */
 
     .header__button {
@@ -57,11 +128,7 @@
     /* projects */
 
     .projects {
-        padding: 36px 0 884px;
-    }
-
-    .projetcs__inner {
-        text-align: center;
+        padding: 36px 0 864px;
     }
 
     .projects__slider-menu {
@@ -70,11 +137,15 @@
 
     .projects__content {
         flex-direction: column;
+        position: relative;
     }
 
     .projects__desc {
         width: auto;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .projects__title {
@@ -84,11 +155,18 @@
     .projects__text {
         font-size: 11px;
         line-height: 158.48%;
-        margin-bottom: 76px;
+        margin-bottom: 354px;
+        width: 311px;
     }
 
     .projects__features {
         text-align: left;
+        align-self: flex-start;
+    }
+
+    .projects__slider {
+        position: absolute;
+        top: 200px;
     }
 
     .slider__img {
@@ -98,7 +176,11 @@
     /* online-control */
 
     .online-control {
-        margin: -826px 0 58px;
+        margin: -815px 0 58px;
+    }
+
+    .online-control__content {
+        position: relative;
     }
 
     .online-control__subtitle {
@@ -112,18 +194,6 @@
     .online-control__video {
         width: 340px;
         margin-bottom: 28px;
-    }
-
-    .video__img {
-        width: 340px;
-    }
-
-    .video::before {
-        bottom: 8.5px;
-    }
-
-    .video__icon {
-        width: 37px;
     }
 
     .online-control__hr {
@@ -141,8 +211,8 @@
     .online-control__form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         width: auto;
+        margin-bottom: 0;
     }
 
     .online-control__form .form__item {
@@ -151,8 +221,18 @@
         color: #FFFFFF;
     }
 
-    .online-control__input {
-        width: 100%;
+    .online-control__form .form__item:last-of-type {
+        margin-bottom: 106px;
+    }
+
+    .online-control__checkbox {
+        position: absolute;
+        top: 693px;
+        left: 0;
+    }
+
+    .online-control__checkbox .checkbox__text {
+        color: #FFFFFF;
     }
 
     /* types-of-repair */
@@ -170,7 +250,6 @@
     }
 
     .types-of-repair__plans {
-        display: flex;
         flex-direction: column;
     }
 
@@ -190,25 +269,10 @@
         margin: 223px 0 0 0;
     }
 
-    .row__item {
-        line-height: 169.8%;
-    }
-
-    .row__subtitle {
-        font-size: 15px;
-        line-height: 138.6%;
-    }
-
     .types-of-repair__options {
         width: 190px;
         margin-left: 0;
         margin-top: -20px;
-    }
-
-    .options__text {
-        font-size: 15px;
-        line-height: 138.6%;
-        padding: 11px 0;
     }
 
     /* advantages */
@@ -222,7 +286,6 @@
     .design-styles {
         background: none;
         height: auto;
-        margin-bottom: 0;
         position: relative;
     }
 
@@ -270,6 +333,8 @@
     }
 
     .design-styles__img:first-of-type {
+        object-fit: cover;
+        width: 340px;
         height: 242px;
     }
 
@@ -299,7 +364,6 @@
     }
 
     .form-questions__item {
-        width: 100%;
         flex-direction: column;
     }
 
@@ -315,7 +379,7 @@
         margin-bottom: 21px;
     }
 
-    .form-questions .checkbox {
+    .form-questions__checkbox {
         align-self: flex-start;
         margin-bottom: 62px;
     }
@@ -331,16 +395,8 @@
         margin-bottom: 23px;
     }
 
-    .contacts__socials-icon {
+    .contacts__socials {
         margin-bottom: 0;
-    }
-
-    .socials__link {
-        margin: 0 10px;
-    }
-
-    .socials__icon {
-        width: 39px;
     }
 
     .contacts__map {
